@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
    <title>Tags on Claudio Bosticco</title>
-   <link>http://example.org/tags/</link>
+   <link>https://bostick23.github.io/tags/</link>
    <description>Recent content in Tags on Claudio Bosticco</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>it-it</language>
    
-       <atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+       <atom:link href="https://bostick23.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
    
    
      <item>
        <title>Impedire Doppio Click Button Asp Webforms</title>
-       <link>http://example.org/posts/impedire-doppio-click-button-asp-webforms/</link>
+       <link>https://bostick23.github.io/posts/impedire-doppio-click-button-asp-webforms/</link>
        <pubDate>Sun, 04 Apr 2021 10:50:52 +0200</pubDate>
        
-       <guid>http://example.org/posts/impedire-doppio-click-button-asp-webforms/</guid>
+       <guid>https://bostick23.github.io/posts/impedire-doppio-click-button-asp-webforms/</guid>
        <description>&lt;p&gt;Per prevenire il doppio click involontario di un Button in un progetto Asp.Net WebForms è necessario impostare il tag &lt;code&gt;UseSubmitBehavior=&amp;quot;false&amp;quot;&lt;/code&gt;:&lt;/p&gt;&lt;pre&gt;&lt;code class=&#34;language-asp&#34; data-lang=&#34;asp&#34;&gt;&amp;lt;asp:Button runat=&amp;quot;server&amp;quot; OnClick=&amp;quot;Execute_Click&amp;quot; Text=&amp;quot;Esegui&amp;quot;    UseSubmitBehavior=&amp;quot;false&amp;quot; OnClientClick=&amp;quot;CheckDouble(this)&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;e richiamare il seguente script Javascript:&lt;/p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CheckDouble&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;bt&lt;/span&gt;) {    &lt;span style=&#34;color:#75715e&#34;&gt;//alert(submit);&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {        &lt;span style=&#34;color:#a6e22e&#34;&gt;bt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;disabled&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;        &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hai già cliccato il bottone. Attendi il completamento dell&amp;#39;operazione&amp;#34;&lt;/span&gt;);        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;    }    &lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
      </item>
    
