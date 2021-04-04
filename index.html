@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
-
+<meta property="og:updated_time" content="2021-04-04T10:50:52+02:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Claudio Bosticco"/>
@@ -70,6 +70,31 @@
   <ul>
     
     
+    
+
+    <li class="first" >
+      <h1><a href="http://example.org/posts/impedire-doppio-click-button-asp-webforms/" title="Impedire Doppio Click Button Asp Webforms">Impedire Doppio Click Button Asp Webforms</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2021-04-04T10:50:52&#43;02:00">Apr 4, 2021</time>
+        </li>
+        
+        
+
+        
+
+        <li>One minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p>Per prevenire il doppio click involontario di un Button in un progetto Asp.Net WebForms è necessario impostare il tag UseSubmitBehavior=&quot;false&quot;:
+&lt;asp:Button runat=&quot;server&quot; OnClick=&quot;Execute_Click&quot; Text=&quot;Esegui&quot; UseSubmitBehavior=&quot;false&quot; OnClientClick=&quot;CheckDouble(this)&quot;/&gt; e richiamare il seguente script Javascript:
+var submit = 0; function CheckDouble(bt) { //alert(submit);  if (submit &gt; 0) { bt.disabled = true; alert(&#34;Hai già cliccato il bottone. Attendi il completamento dell&#39;operazione&#34;); return false; } submit++; return true; } </p>
+      
+    </li>
     
   </ul>
 </section>
