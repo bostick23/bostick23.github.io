@@ -1,6 +1,6 @@
 ---
 date: "2024-11-01T12:08:10+01:00"
-draft: true
+draft: false
 title: "Sql Server Contare Tutte Le Righe Di Tutte Le Tabelle"
 ---
 

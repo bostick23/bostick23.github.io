@@ -1,6 +1,6 @@
 ---
 date: "2024-11-01T12:03:32+01:00"
-draft: true
+draft: false
 title: "Javascript Filter Map Reduce"
 ---
 

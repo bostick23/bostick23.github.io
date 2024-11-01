@@ -1,6 +1,6 @@
 ---
 date: "2024-11-01T12:06:50+01:00"
-draft: true
+draft: false
 title: "SQL Server effettuare backup database tramite query"
 ---
 

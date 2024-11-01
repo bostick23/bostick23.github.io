@@ -1,6 +1,6 @@
 ---
 date: "2024-11-01T12:06:08+01:00"
-draft: true
+draft: false
 title: "Linux Manutenzione Dello Spazio Su Disco"
 ---
 
