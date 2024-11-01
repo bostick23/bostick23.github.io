@@ -1,0 +1,33 @@
+baseURL: https://claudiobosticco.com
+languageCode: it-it
+title: Claudio Bosticco
+theme: ["PaperMod"]
+
+params:
+  homeInfoParams:
+    Title: Claudio Bosticco
+    Content: Benvenuto nel mio sito! Sono uno sviluppatore di 34 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d’aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
+  ShowShareButtons: true
+  ShareButtons: ["linkedin"] # To customize which share buttons to be enabled on page
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/claudio-bosticco/"
+    - name: "instagram"
+      url: "https://www.instagram.com/claudio.bosticco/"
+    - name: "github"
+      url: "https://github.com/bostick23/"
+      outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+  ShowCodeCopyButtons: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
