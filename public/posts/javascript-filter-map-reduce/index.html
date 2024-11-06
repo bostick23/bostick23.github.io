@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Javascript Filter Map Reduce | Claudio Bosticco</title>
 <meta name="keywords" content="">
 <meta name="description" content="Queste tre funzioni servono per gestire rapidamente dati all&rsquo;interno di liste. Sono l&rsquo;equivalente in Javascript del LINQ
@@ -21,16 +21,16 @@ console.log(&#34;Quadrati: &#34;, quadrati);
 Reduce
 La funzione reduce di effettuare una funzione su ogni elemento della lista e restituire un risultato &ldquo;accumulato&rdquo;">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/javascript-filter-map-reduce/">
+<link rel="canonical" href="https://claudiobosticco.com/posts/javascript-filter-map-reduce/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://claudiobosticco.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://claudiobosticco.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://claudiobosticco.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://claudiobosticco.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://claudiobosticco.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/javascript-filter-map-reduce/">
+<link rel="alternate" hreflang="en" href="https://claudiobosticco.com/posts/javascript-filter-map-reduce/">
 <noscript>
     <style>
         #theme-toggle,
@@ -68,6 +68,103 @@ La funzione reduce di effettuare una funzione su ogni elemento della lista e res
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TXWECFHD"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C1TXWECFHD');
+        }
+      </script><meta property="og:title" content="Javascript Filter Map Reduce">
+<meta property="og:description" content="Queste tre funzioni servono per gestire rapidamente dati all&rsquo;interno di liste. Sono l&rsquo;equivalente in Javascript del LINQ
+Filter
+La funzione filter consente di estrarre determinati elementi dell&rsquo;array in base ad una funzione
+const numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1];
+const even = numbers.filter((x) =&gt; x % 2 === 0);
+console.log(&#34;Numeri pari: &#34;, even);
+Map
+La funzione map consente di applicare una funzione ad ogni elemento della lista
+const numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1];
+const quadrati = numbers.map((x) =&gt; x * x);
+console.log(&#34;Quadrati: &#34;, quadrati);
+Reduce
+La funzione reduce di effettuare una funzione su ogni elemento della lista e restituire un risultato &ldquo;accumulato&rdquo;">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://claudiobosticco.com/posts/javascript-filter-map-reduce/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2024-11-01T12:03:32+01:00">
+<meta property="article:modified_time" content="2024-11-01T12:03:32+01:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript Filter Map Reduce">
+<meta name="twitter:description" content="Queste tre funzioni servono per gestire rapidamente dati all&rsquo;interno di liste. Sono l&rsquo;equivalente in Javascript del LINQ
+Filter
+La funzione filter consente di estrarre determinati elementi dell&rsquo;array in base ad una funzione
+const numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1];
+const even = numbers.filter((x) =&gt; x % 2 === 0);
+console.log(&#34;Numeri pari: &#34;, even);
+Map
+La funzione map consente di applicare una funzione ad ogni elemento della lista
+const numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1];
+const quadrati = numbers.map((x) =&gt; x * x);
+console.log(&#34;Quadrati: &#34;, quadrati);
+Reduce
+La funzione reduce di effettuare una funzione su ogni elemento della lista e restituire un risultato &ldquo;accumulato&rdquo;">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://claudiobosticco.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Javascript Filter Map Reduce",
+      "item": "https://claudiobosticco.com/posts/javascript-filter-map-reduce/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Javascript Filter Map Reduce",
+  "name": "Javascript Filter Map Reduce",
+  "description": "Queste tre funzioni servono per gestire rapidamente dati all\u0026rsquo;interno di liste. Sono l\u0026rsquo;equivalente in Javascript del LINQ\nFilter La funzione filter consente di estrarre determinati elementi dell\u0026rsquo;array in base ad una funzione\nconst numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1]; const even = numbers.filter((x) =\u0026gt; x % 2 === 0); console.log(\u0026#34;Numeri pari: \u0026#34;, even); Map La funzione map consente di applicare una funzione ad ogni elemento della lista\nconst numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1]; const quadrati = numbers.map((x) =\u0026gt; x * x); console.log(\u0026#34;Quadrati: \u0026#34;, quadrati); Reduce La funzione reduce di effettuare una funzione su ogni elemento della lista e restituire un risultato \u0026ldquo;accumulato\u0026rdquo;\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Queste tre funzioni servono per gestire rapidamente dati all’interno di liste. Sono l’equivalente in Javascript del LINQ\nFilter La funzione filter consente di estrarre determinati elementi dell’array in base ad una funzione\nconst numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1]; const even = numbers.filter((x) =\u003e x % 2 === 0); console.log(\"Numeri pari: \", even); Map La funzione map consente di applicare una funzione ad ogni elemento della lista\nconst numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1]; const quadrati = numbers.map((x) =\u003e x * x); console.log(\"Quadrati: \", quadrati); Reduce La funzione reduce di effettuare una funzione su ogni elemento della lista e restituire un risultato “accumulato”\nconst numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1]; const somma = numbers.reduce((accumulatore, valore) =\u003e { return accumulatore + valore; }, 0); console.log(\"Somma: \", somma); ",
+  "wordCount" : "144",
+  "inLanguage": "en",
+  "datePublished": "2024-11-01T12:03:32+01:00",
+  "dateModified": "2024-11-01T12:03:32+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://claudiobosticco.com/posts/javascript-filter-map-reduce/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Claudio Bosticco",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://claudiobosticco.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -85,7 +182,7 @@ La funzione reduce di effettuare una funzione su ogni elemento della lista e res
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Claudio Bosticco (Alt + H)">Claudio Bosticco</a>
+            <a href="https://claudiobosticco.com/" accesskey="h" title="Claudio Bosticco (Alt + H)">Claudio Bosticco</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -120,12 +217,6 @@ La funzione reduce di effettuare una funzione su ogni elemento della lista e res
     
     <h1 class="post-title entry-hint-parent">
       Javascript Filter Map Reduce
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2024-11-01 12:03:32 +0100 CET'>November 1, 2024</span>
 
@@ -160,7 +251,7 @@ La funzione reduce di effettuare una funzione su ogni elemento della lista e res
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Javascript Filter Map Reduce on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fjavascript-filter-map-reduce%2f&amp;title=Javascript%20Filter%20Map%20Reduce&amp;summary=Javascript%20Filter%20Map%20Reduce&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fjavascript-filter-map-reduce%2f">
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fclaudiobosticco.com%2fposts%2fjavascript-filter-map-reduce%2f&amp;title=Javascript%20Filter%20Map%20Reduce&amp;summary=Javascript%20Filter%20Map%20Reduce&amp;source=https%3a%2f%2fclaudiobosticco.com%2fposts%2fjavascript-filter-map-reduce%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -174,7 +265,7 @@ La funzione reduce di effettuare una funzione su ogni elemento della lista e res
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Claudio Bosticco</a></span> · 
+        <span>&copy; 2024 <a href="https://claudiobosticco.com/">Claudio Bosticco</a></span> · 
 
     <span>
         Powered by
