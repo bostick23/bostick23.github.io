@@ -1,4 +1,4 @@
-baseURL: https://claudiobosticco.com
+baseURL: "https://claudiobosticco.com"
 languageCode: it-it
 title: Claudio Bosticco
 theme: ["PaperMod"]
