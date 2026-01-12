@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,7 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
 ">
 <meta name="author" content="">
 <link rel="canonical" href="https://claudiobosticco.com/posts/linux-manutenzione-dello-spazio-su-disco/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://claudiobosticco.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://claudiobosticco.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://claudiobosticco.com/favicon-32x32.png">
@@ -57,27 +57,42 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
 </noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1TXWECFHD"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -87,30 +102,18 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
           gtag('js', new Date());
           gtag('config', 'G-C1TXWECFHD');
         }
-      </script><meta property="og:title" content="Linux Manutenzione Dello Spazio Su Disco">
-<meta property="og:description" content="In questa sezione vengono illustrati i comandi per ottimizzare lo spazio su server Linux.
-Eliminare file con una certa estensione
-Si può utilizzare il comando find specificando:
-
-directory in cui cercare (in maniera ricorsiva)
-il tag -name per filtrare l&rsquo;estensione
-il tag -delete per lanciare la cancellazione dei file trovati
-
-find /var/opt/docker -name *.bak -delete
-Trovare file con dimensione superiore a 1GB
-Si può utilizzare il comando file specificando:
-
-directory in cui cercare (in maniera ricorsiva)
-il tag -name per filtrare l&rsquo;estensione
-il tag -size per filtare solo i file con dimensione uguale o superiore a 1 GB
-il tag -printf per stampare nome del file e dimensione in KB
-
-find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n&#34;
-">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://claudiobosticco.com/posts/linux-manutenzione-dello-spazio-su-disco/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2024-11-01T12:06:08+01:00">
-<meta property="article:modified_time" content="2024-11-01T12:06:08+01:00">
+      </script><meta property="og:url" content="https://claudiobosticco.com/posts/linux-manutenzione-dello-spazio-su-disco/">
+  <meta property="og:site_name" content="Claudio Bosticco">
+  <meta property="og:title" content="Linux Manutenzione Dello Spazio Su Disco">
+  <meta property="og:description" content="In questa sezione vengono illustrati i comandi per ottimizzare lo spazio su server Linux.
+Eliminare file con una certa estensione Si può utilizzare il comando find specificando:
+directory in cui cercare (in maniera ricorsiva) il tag -name per filtrare l’estensione il tag -delete per lanciare la cancellazione dei file trovati find /var/opt/docker -name *.bak -delete Trovare file con dimensione superiore a 1GB Si può utilizzare il comando file specificando:
+directory in cui cercare (in maniera ricorsiva) il tag -name per filtrare l’estensione il tag -size per filtare solo i file con dimensione uguale o superiore a 1 GB il tag -printf per stampare nome del file e dimensione in KB find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n&#34; ">
+  <meta property="og:locale" content="it-it">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-01T12:06:08+01:00">
+    <meta property="article:modified_time" content="2024-11-01T12:06:08+01:00">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux Manutenzione Dello Spazio Su Disco">
 <meta name="twitter:description" content="In questa sezione vengono illustrati i comandi per ottimizzare lo spazio su server Linux.
@@ -184,25 +187,13 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
 }
 </script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://claudiobosticco.com/" accesskey="h" title="Claudio Bosticco (Alt + H)">Claudio Bosticco</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -283,7 +274,7 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://claudiobosticco.com/">Claudio Bosticco</a></span> · 
+        <span>&copy; 2026 <a href="https://claudiobosticco.com/">Claudio Bosticco</a></span> · 
 
     <span>
         Powered by
@@ -298,9 +289,14 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -341,11 +337,12 @@ find /var/opt/docker -name &#39;*.ldf&#39; -size &#43;1G -printf &#34;%p %k KB\n
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

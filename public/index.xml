@@ -4,7 +4,7 @@
     <title>Claudio Bosticco</title>
     <link>https://claudiobosticco.com/</link>
     <description>Recent content on Claudio Bosticco</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.154.5</generator>
     <language>it-it</language>
     <lastBuildDate>Fri, 01 Nov 2024 12:08:35 +0100</lastBuildDate>
     <atom:link href="https://claudiobosticco.com/index.xml" rel="self" type="application/rss+xml" />
@@ -74,11 +74,11 @@
       <pubDate>Fri, 01 Nov 2024 12:05:12 +0100</pubDate>
       <guid>https://claudiobosticco.com/posts/ef-migrations/</guid>
       <description>&lt;p&gt;In questa sezione sono illustrati comandi utili per gestire le migrations.&lt;/p&gt;
-&lt;h2 id=&#34;rimuovere-una-migration&#34;&gt;Rimuovere una migration&lt;/h2&gt;
-&lt;p&gt;Per rimuovere una migration bisogna utilizzare il comando sottostante specificando la migration alla quale si vuole tornare. Ad esempio se ho la migration m01 e m02 e volessi annullare quest&amp;rsquo;ultima, dovrei specificare m01 nel seguente comando:&lt;/p&gt;
+&lt;h2 id=&#34;aggiungere-una-migration&#34;&gt;Aggiungere una migration&lt;/h2&gt;
+&lt;p&gt;Per aggiungere una migrations posizionarsi nella cartella dove è presente il file di solution e utilizzare il comando sottostante:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dotnet ef database update &amp;lt;&amp;lt;previous-migration&amp;gt;&amp;gt; --context contextName
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dotnet ef migrations add &amp;lt;&amp;lt;MigrationName&amp;gt;&amp;gt; --context LogicWayContext -p LogicWay.Core -s LogicWay
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E&amp;rsquo; importante specificare il flag -p per indicare il progetto in cui è presente il context e in cui creare il file di migration e anche il flag -s per speficare la solution, da cui il comando può capire quale sia il progetto di avvio contenente la connection string del database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Javascript Filter Map Reduce</title>
@@ -124,7 +124,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CheckDouble&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;bt&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;//alert(submit);
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;submit&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;bt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;disabled&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hai già cliccato il bottone. Attendi il completamento dell&amp;#39;operazione&amp;#34;&lt;/span&gt;
