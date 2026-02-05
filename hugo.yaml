@@ -1,14 +1,40 @@
 baseURL: "https://claudiobosticco.com"
-languageCode: it-it
-title: Claudio Bosticco
+defaultContentLanguage: it
 theme: ["PaperMod"]
 
+languages:
+  it:
+    languageCode: it-it
+    languageName: Italiano
+    weight: 1
+    title: Claudio Bosticco
+    params:
+      homeInfoParams:
+        Title: Claudio Bosticco
+        Content: Benvenuto nel mio sito! Sono uno sviluppatore di 34 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d'aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
+    menu:
+      main:
+        - name: Cerca
+          url: search/
+          weight: 10
+  en:
+    languageCode: en-us
+    languageName: English
+    weight: 2
+    title: Claudio Bosticco
+    params:
+      homeInfoParams:
+        Title: Claudio Bosticco
+        Content: Welcome to my site! I'm a 34-year-old developer specialized in .NET and I created this site as a public notebook, collecting what I find useful or interesting in my daily work. I hope these resources can help you and anyone looking for inspiration or assistance with their development projects.
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+
 params:
-  homeInfoParams:
-    Title: Claudio Bosticco
-    Content: Benvenuto nel mio sito! Sono uno sviluppatore di 34 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d’aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
   ShowShareButtons: true
-  ShareButtons: ["linkedin"] # To customize which share buttons to be enabled on page
+  ShareButtons: ["linkedin"]
   socialIcons:
     - name: "linkedin"
       url: "https://www.linkedin.com/in/claudio-bosticco/"
@@ -16,11 +42,6 @@ params:
       url: "https://www.instagram.com/claudio.bosticco/"
     - name: "github"
       url: "https://github.com/bostick23/"
-      outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # necessary for search
   ShowCodeCopyButtons: true
   fuseOpts:
     isCaseSensitive: false
@@ -29,8 +50,14 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 services:
   googleAnalytics:
     id: G-C1TXWECFHD
