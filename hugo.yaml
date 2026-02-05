@@ -8,6 +8,7 @@ languages:
     languageCode: it-it
     languageName: Italiano
     weight: 1
+    contentDir: content/it
     title: Claudio Bosticco
     params:
       homeInfoParams:
@@ -22,6 +23,7 @@ languages:
     languageCode: en-us
     languageName: English
     weight: 2
+    contentDir: content/en
     title: Claudio Bosticco
     params:
       homeInfoParams:
