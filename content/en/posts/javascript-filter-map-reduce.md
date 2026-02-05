@@ -28,7 +28,7 @@ console.log("Squares: ", squares);
 
 ## Reduce
 
-The **reduce** function performs a function on each element of the list and returns an "accumulated" result.
+The **reduce** function allows you to perform a function on each element of the list and returns an "accumulated" result.
 
 ```javascript
 const numbers = [1, 4, 5, 6, 4, 2, 5, 6, 3, 1];

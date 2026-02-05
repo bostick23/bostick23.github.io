@@ -1,5 +1,6 @@
 baseURL: "https://claudiobosticco.com"
 defaultContentLanguage: it
+title: Claudio Bosticco
 theme: ["PaperMod"]
 
 languages:
