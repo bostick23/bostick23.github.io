@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status -u)",
+      "Bash(hugo)",
+      "Bash(git stash)",
+      "Bash(git stash pop)",
+      "Bash(curl -s http://localhost:1316/)",
+      "Bash(curl -s http://localhost:1316/walletmanager/)",
+      "Bash(curl -s http://localhost:1316/en/walletmanager/)",
+      "Bash(curl -s http://localhost:1316/en/)",
+      "Bash(pkill -f \"hugo server\")"
+    ]
+  }
+}

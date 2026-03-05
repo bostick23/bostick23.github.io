@@ -19,6 +19,9 @@ languages:
         - name: Cerca
           url: search/
           weight: 10
+        - name: WalletManager
+          url: walletmanager/
+          weight: 20
   en:
     languageCode: en-us
     languageName: English
@@ -34,6 +37,9 @@ languages:
         - name: Search
           url: search/
           weight: 10
+        - name: WalletManager
+          url: walletmanager/
+          weight: 20
 
 params:
   ShowShareButtons: true
