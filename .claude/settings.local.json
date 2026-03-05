@@ -9,7 +9,11 @@
       "Bash(curl -s http://localhost:1316/walletmanager/)",
       "Bash(curl -s http://localhost:1316/en/walletmanager/)",
       "Bash(curl -s http://localhost:1316/en/)",
-      "Bash(pkill -f \"hugo server\")"
+      "Bash(pkill -f \"hugo server\")",
+      "Bash(curl -s http://localhost:1317/)",
+      "Bash(curl -s http://localhost:1317/contatti/)",
+      "Bash(curl -s http://localhost:1317/en/contact/)",
+      "Bash(curl -s http://localhost:1317/en/)"
     ]
   }
 }

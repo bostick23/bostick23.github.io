@@ -22,6 +22,9 @@ languages:
         - name: WalletManager
           url: walletmanager/
           weight: 20
+        - name: Contatti
+          url: contatti/
+          weight: 30
   en:
     languageCode: en-us
     languageName: English
@@ -40,6 +43,9 @@ languages:
         - name: WalletManager
           url: walletmanager/
           weight: 20
+        - name: Contact
+          url: contact/
+          weight: 30
 
 params:
   ShowShareButtons: true
