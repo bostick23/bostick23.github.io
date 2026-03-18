@@ -1,4 +1,4 @@
-{{- /* Fixed: removed deprecated site.Author references for Hugo 0.157+ */}}
+{{- /* Fixed: removed deprecated site.Author (0.156+) and site.Language.LanguageCode (0.158+) */}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
@@ -45,7 +45,7 @@
     </image>
     {{- end }}
     <generator>Hugo -- {{ hugo.Version }}</generator>
-    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
+    <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
     <copyright>{{ . | markdownify | plainify | strings.TrimPrefix "© " }}</copyright>{{ end }}{{ if not .Date.IsZero }}

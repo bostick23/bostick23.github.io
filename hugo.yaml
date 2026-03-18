@@ -5,8 +5,8 @@ theme: ["PaperMod"]
 
 languages:
   it:
-    languageCode: it-it
-    languageName: Italiano
+    locale: it-it
+    label: Italiano
     weight: 1
     contentDir: content/it
     title: Claudio Bosticco
@@ -26,8 +26,8 @@ languages:
           url: contatti/
           weight: 30
   en:
-    languageCode: en-us
-    languageName: English
+    locale: en-us
+    label: English
     weight: 2
     contentDir: content/en
     title: Claudio Bosticco
