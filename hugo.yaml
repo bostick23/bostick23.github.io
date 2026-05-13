@@ -13,7 +13,7 @@ languages:
     params:
       homeInfoParams:
         Title: Claudio Bosticco
-        Content: Benvenuto nel mio sito! Sono uno sviluppatore di 34 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d'aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
+        Content: Benvenuto nel mio sito! Sono uno sviluppatore di 35 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d'aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
     menu:
       main:
         - name: Cerca
@@ -34,7 +34,7 @@ languages:
     params:
       homeInfoParams:
         Title: Claudio Bosticco
-        Content: Welcome to my site! I'm a 34-year-old developer specialized in .NET and I created this site as a public notebook, collecting what I find useful or interesting in my daily work. I hope these resources can help you and anyone looking for inspiration or assistance with their development projects.
+        Content: Welcome to my site! I'm a 35-year-old developer specialized in .NET and I created this site as a public notebook, collecting what I find useful or interesting in my daily work. I hope these resources can help you and anyone looking for inspiration or assistance with their development projects.
     menu:
       main:
         - name: Search
