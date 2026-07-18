@@ -14,7 +14,8 @@
       "Bash(curl -s http://localhost:1317/contatti/)",
       "Bash(curl -s http://localhost:1317/en/contact/)",
       "Bash(curl -s http://localhost:1317/en/)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(git submodule *)"
     ]
   }
 }

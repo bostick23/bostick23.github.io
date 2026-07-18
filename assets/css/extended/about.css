@@ -1,0 +1,78 @@
+/* ===================== About / Chi sono ===================== */
+
+.about-hero { margin: var(--gap) 0 calc(var(--gap) * 1.6); }
+.about-kicker {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 0.85rem;
+    margin: 0 0 0.6rem;
+}
+.about-claim {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    max-width: 24ch;
+}
+.about-lead {
+    color: var(--content);
+    max-width: 62ch;
+    font-size: 1.05rem;
+}
+
+/* ---------- Infografica ---------- */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: var(--gap);
+    margin: 0 0 calc(var(--gap) * 1.8);
+}
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.2rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    border-top: 3px solid var(--accent);
+}
+.stat-value {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1;
+    color: var(--primary);
+}
+.stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--secondary);
+}
+
+/* ---------- Principi ---------- */
+.about-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--gap);
+    margin: 0 0 calc(var(--gap) * 1.8);
+}
+.principle {
+    padding: 1.3rem;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+}
+.principle h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    color: var(--accent);
+}
+.principle p { margin: 0; color: var(--content); font-size: 0.95rem; }
+
+/* ---------- Stack ---------- */
+.about-stack { margin: 0 0 calc(var(--gap) * 1.6); }
+.about-stack h3 { font-size: 1.05rem; margin: 0 0 0.8rem; }
+.about-stack .tech-chip { font-size: 0.82rem; padding: 0.35em 0.8em; }
+
+/* ---------- CTA ---------- */
+.about-cta { margin-bottom: var(--gap); }

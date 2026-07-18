@@ -1,0 +1,30 @@
+{{- /* Card progetto riutilizzabile. Contesto atteso: una Page del progetto.
+       Front matter usato: title, description (o param `tagline`),
+       tech (lista di stringhe), detailUrl (override del link "Scopri"),
+       links (lista di {label, url}). */ -}}
+{{- $url := .Params.detailurl | default .RelPermalink -}}
+<article class="project-card">
+  <div class="project-card-body">
+    <h3 class="project-card-title">
+      <a href="{{ $url }}">{{ .Title }}</a>
+    </h3>
+    {{- with (.Params.tagline | default .Description) }}
+    <p class="project-card-desc">{{ . }}</p>
+    {{- end }}
+    {{- with .Params.tech }}
+    <ul class="tech-list">
+      {{- range . }}<li class="tech-chip">{{ . }}</li>{{ end }}
+    </ul>
+    {{- end }}
+  </div>
+  <div class="project-card-foot">
+    <a class="project-card-link" href="{{ $url }}">{{ i18n "project_learn_more" }}&nbsp;→</a>
+    {{- with .Params.links }}
+    <span class="project-ext-links">
+      {{- range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .label }}">{{ .label }}</a>
+      {{- end }}
+    </span>
+    {{- end }}
+  </div>
+</article>

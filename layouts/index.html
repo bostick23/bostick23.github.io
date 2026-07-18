@@ -1,0 +1,72 @@
+{{- define "main" }}
+<div class="home">
+
+  {{- /* ---------- HERO ---------- */}}
+  {{- $aboutURL := cond (eq site.Language.Lang "it") ("chi-sono/" | relLangURL) ("about/" | relLangURL) }}
+  {{- with site.Params.homeInfoParams }}
+  <section class="hero">
+    <p class="hero-kicker">{{ i18n "hero_kicker" }}</p>
+    <h1 class="hero-title">{{ .Title | markdownify }}</h1>
+    <div class="hero-text">{{ .Content | markdownify }}</div>
+    <div class="hero-actions">
+      <a class="ds-btn ds-btn-primary" href="{{ "posts/" | absLangURL }}">{{ i18n "hero_cta_posts" }}</a>
+      <a class="ds-btn ds-btn-ghost" href="{{ $aboutURL }}">{{ i18n "hero_cta_about" }}</a>
+    </div>
+    {{- with site.Params.socialIcons }}
+    <div class="hero-social">{{ partial "social_icons.html" }}</div>
+    {{- end }}
+  </section>
+  {{- end }}
+
+  {{- /* ---------- ARTICOLI RECENTI ---------- */}}
+  {{- $posts := first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+  {{- with $posts }}
+  <section class="home-section">
+    <div class="section-head">
+      <h2 class="section-title">{{ i18n "recent_posts" }}</h2>
+      <a class="section-link" href="{{ "posts/" | absLangURL }}">{{ i18n "view_all_posts" }}&nbsp;→</a>
+    </div>
+    <ul class="post-list">
+      {{- range . }}
+      <li class="post-list-item">
+        <a class="pli-link" href="{{ .Permalink }}">
+          <time class="pli-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+          <span class="pli-title">{{ .Title }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+
+  {{- /* ---------- PROGETTI (teaser) ---------- */}}
+  {{- $projectsSection := or (site.GetPage "/progetti") (site.GetPage "/projects") }}
+  {{- with $projectsSection }}
+  {{- $projects := first 3 .Pages }}
+  {{- with $projects }}
+  <section class="home-section">
+    <div class="section-head">
+      <h2 class="section-title">{{ i18n "recent_projects" }}</h2>
+      <a class="section-link" href="{{ $projectsSection.RelPermalink }}">{{ i18n "view_all_projects" }}&nbsp;→</a>
+    </div>
+    <p class="section-subtitle">{{ i18n "projects_subtitle" }}</p>
+    <div class="project-grid">
+      {{- range . }}
+      {{ partial "project-card.html" . }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{- /* ---------- ABOUT (teaser) ---------- */}}
+  <section class="home-section about-teaser">
+    <div class="about-teaser-inner">
+      <h2 class="section-title">{{ i18n "about_home_title" }}</h2>
+      <p class="about-teaser-text">{{ i18n "about_home_text" }}</p>
+      <a class="ds-btn ds-btn-ghost" href="{{ $aboutURL }}">{{ i18n "about_home_cta" }}&nbsp;→</a>
+    </div>
+  </section>
+
+</div>
+{{- end }}

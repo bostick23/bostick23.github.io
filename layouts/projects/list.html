@@ -1,0 +1,21 @@
+{{- define "main" }}
+<div class="home projects-page">
+
+  <section class="hero projects-hero">
+    <h1 class="hero-title">{{ .Title }}</h1>
+    {{- with .Description }}<div class="hero-text"><p>{{ . }}</p></div>{{- end }}
+    {{- if .Content }}<div class="hero-text post-content">{{ .Content }}</div>{{- end }}
+  </section>
+
+  {{- with .Pages }}
+  <section class="home-section">
+    <div class="project-grid">
+      {{- range . }}
+      {{ partial "project-card.html" . }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+</div>
+{{- end }}

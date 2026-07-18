@@ -1,0 +1,24 @@
+hero_kicker:
+  other: ".NET developer · with an eye for functional design"
+hero_cta_posts:
+  other: "Read the articles"
+hero_cta_about:
+  other: "About me"
+recent_posts:
+  other: "Recent articles"
+view_all_posts:
+  other: "All articles"
+recent_projects:
+  other: "Projects"
+projects_subtitle:
+  other: "Things I have built, not just written about."
+view_all_projects:
+  other: "All projects"
+project_learn_more:
+  other: "Learn more"
+about_home_title:
+  other: "How I work"
+about_home_text:
+  other: "I write software in the .NET ecosystem. I care about code that reads well, interfaces that respect their users, and tools that do one thing right. Here I collect what I learn."
+about_home_cta:
+  other: "Get to know me"
