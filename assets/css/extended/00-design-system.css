@@ -1,0 +1,194 @@
+/* =====================================================================
+   Design system — identità visiva
+   Caricato DOPO il core del tema (vedi _partials/head.html), quindi
+   sovrascrive le variabili di PaperMod (theme-vars.css) e il font-family
+   impostato in reset.css.
+   ===================================================================== */
+
+/* ---------- Font self-hosted (woff2 in /static/fonts) ---------- */
+
+/* Body — Inter */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/inter-700.woff2") format("woff2");
+}
+
+/* Heading — Space Grotesk */
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/space-grotesk-500.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/space-grotesk-600.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/space-grotesk-700.woff2") format("woff2");
+}
+
+/* Mono / accenti — JetBrains Mono */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-400.woff2") format("woff2");
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-500.woff2") format("woff2");
+}
+
+/* ---------- Variabili: palette, font, spazi ---------- */
+
+:root {
+    /* Font stacks */
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-heading: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+    /* Spazi e proporzioni */
+    --gap: 24px;
+    --content-gap: 22px;
+    --main-width: 740px;
+    --nav-width: 1060px;
+    --radius: 10px;
+
+    /* Palette chiara — "paper" leggermente calda + accent violetto .NET */
+    --theme: rgb(250, 249, 247);
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(24, 24, 27);
+    --secondary: rgb(88, 88, 98);
+    --tertiary: rgb(226, 224, 220);
+    --content: rgb(44, 44, 52);
+    --code-bg: rgb(243, 241, 237);
+    --code-block-bg: rgb(28, 29, 33);
+    --border: rgb(232, 230, 226);
+
+    /* Accent */
+    --accent: #7c3aed;
+    --accent-hover: #6d28d9;
+    --accent-soft: rgba(124, 58, 237, 0.10);
+    --accent-contrast: #ffffff;
+
+    /* Signal colors — usati nei badge difficoltà (fase metadati) */
+    --signal-beginner: #16a34a;
+    --signal-intermediate: #d97706;
+    --signal-advanced: #dc2626;
+}
+
+:root[data-theme="dark"] {
+    --theme: rgb(18, 18, 22);
+    --entry: rgb(30, 30, 36);
+    --primary: rgb(228, 228, 231);
+    --secondary: rgb(150, 150, 160);
+    --tertiary: rgb(55, 55, 62);
+    --content: rgb(200, 200, 206);
+    --code-bg: rgb(38, 38, 45);
+    --code-block-bg: rgb(38, 38, 45);
+    --border: rgb(45, 45, 52);
+
+    --accent: #a78bfa;
+    --accent-hover: #c4b5fd;
+    --accent-soft: rgba(167, 139, 250, 0.14);
+    --accent-contrast: #1a1320;
+
+    --signal-beginner: #4ade80;
+    --signal-intermediate: #fbbf24;
+    --signal-advanced: #f87171;
+}
+
+/* ---------- Tipografia ---------- */
+
+html {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-header h1,
+.post-title,
+.first-entry .entry-header h1 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+code, pre, kbd, .post-tags a, .terms-tags a {
+    font-family: var(--font-mono);
+}
+
+/* ---------- Accent applicato agli elementi interattivi ---------- */
+
+.post-content a,
+.entry-content a,
+.toc a,
+.footer a {
+    color: var(--accent);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+}
+
+.post-content a:hover,
+.entry-content a:hover,
+.footer a:hover {
+    color: var(--accent-hover);
+}
+
+/* Voce di menu attiva */
+.nav .logo a,
+#menu a span.active {
+    box-shadow: 0 1px 0 0 var(--accent);
+}
+
+#menu a span.active {
+    color: var(--accent);
+}
+
+/* Bottoni "top" e share ereditano l'accent al hover */
+.top-link {
+    color: var(--accent-contrast);
+    background: var(--accent);
+}

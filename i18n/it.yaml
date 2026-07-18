@@ -1,0 +1,24 @@
+hero_kicker:
+  other: "Sviluppatore .NET · attenzione al design funzionale"
+hero_cta_posts:
+  other: "Leggi gli articoli"
+hero_cta_about:
+  other: "Chi sono"
+recent_posts:
+  other: "Articoli recenti"
+view_all_posts:
+  other: "Tutti gli articoli"
+recent_projects:
+  other: "Progetti"
+projects_subtitle:
+  other: "Cose che ho costruito, non solo di cui ho scritto."
+view_all_projects:
+  other: "Tutti i progetti"
+project_learn_more:
+  other: "Scopri"
+about_home_title:
+  other: "Come lavoro"
+about_home_text:
+  other: "Scrivo software in ambito .NET. Mi interessa il codice che si lascia leggere, le interfacce che rispettano chi le usa e gli strumenti che fanno una cosa bene. Qui raccolgo ciò che imparo."
+about_home_cta:
+  other: "Conosci di più"

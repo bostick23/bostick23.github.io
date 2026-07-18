@@ -16,15 +16,21 @@ languages:
         Content: Benvenuto nel mio sito! Sono uno sviluppatore di 35 anni specializzato in ambito .NET e ho creato questo sito come blocco appunti pubblico, raccogliendo ciò che trovo utile o interessante nel mio lavoro quotidiano. Spero che queste risorse possano essere d'aiuto anche a te e a chiunque cerchi ispirazione o una mano nei propri progetti di sviluppo.
     menu:
       main:
-        - name: Cerca
-          url: search/
+        - name: Articoli
+          url: posts/
           weight: 10
-        - name: WalletManager
-          url: walletmanager/
+        - name: Progetti
+          url: progetti/
           weight: 20
+        - name: Chi sono
+          url: chi-sono/
+          weight: 30
         - name: Contatti
           url: contatti/
-          weight: 30
+          weight: 40
+        - name: Cerca
+          url: search/
+          weight: 50
   en:
     locale: en-us
     label: English
@@ -37,17 +43,25 @@ languages:
         Content: Welcome to my site! I'm a 35-year-old developer specialized in .NET and I created this site as a public notebook, collecting what I find useful or interesting in my daily work. I hope these resources can help you and anyone looking for inspiration or assistance with their development projects.
     menu:
       main:
-        - name: Search
-          url: search/
+        - name: Posts
+          url: posts/
           weight: 10
-        - name: WalletManager
-          url: walletmanager/
+        - name: Projects
+          url: projects/
           weight: 20
+        - name: About
+          url: about/
+          weight: 30
         - name: Contact
           url: contact/
-          weight: 30
+          weight: 40
+        - name: Search
+          url: search/
+          weight: 50
 
 params:
+  mainSections:
+    - posts
   ShowShareButtons: true
   ShareButtons: ["linkedin"]
   socialIcons:
