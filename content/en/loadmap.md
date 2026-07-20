@@ -56,26 +56,28 @@ ShowBreadCrumbs: false
 {{< /rawhtml >}}
 
 {{< rawhtml >}}
-<!-- TODO: add screenshots to static/images/loadmap/ and uncomment
 <div class="wm-screenshots">
+  <div class="wm-screenshot">
+    <img src="/images/loadmap/screenshot-allenamento.jpg" alt="Loadmap - Workouts and history" loading="lazy">
+    <p>Workouts and history</p>
+  </div>
   <div class="wm-screenshot">
     <img src="/images/loadmap/screenshot-scheda.jpg" alt="Loadmap - Workout plan" loading="lazy">
     <p>Workout plan</p>
   </div>
   <div class="wm-screenshot">
-    <img src="/images/loadmap/screenshot-allenamento.jpg" alt="Loadmap - Workout in progress" loading="lazy">
-    <p>Workout in progress</p>
-  </div>
-  <div class="wm-screenshot">
-    <img src="/images/loadmap/screenshot-corsa.jpg" alt="Loadmap - Running" loading="lazy">
+    <img src="/images/loadmap/screenshot-corsa.jpg" alt="Loadmap - Logging a run" loading="lazy">
     <p>Running</p>
   </div>
   <div class="wm-screenshot">
-    <img src="/images/loadmap/screenshot-progressi.jpg" alt="Loadmap - Progress" loading="lazy">
-    <p>Progress</p>
+    <img src="/images/loadmap/screenshot-progressi.jpg" alt="Loadmap - Stats and body measurements" loading="lazy">
+    <p>Stats and measurements</p>
+  </div>
+  <div class="wm-screenshot">
+    <img src="/images/loadmap/screenshot-catalogo.jpg" alt="Loadmap - Exercise catalog" loading="lazy">
+    <p>Exercise catalog</p>
   </div>
 </div>
--->
 {{< /rawhtml >}}
 
 ## Privacy First
