@@ -11,7 +11,9 @@ ShowBreadCrumbs: false
   <div class="wm-hero-text">
     <h2>La mappa dei tuoi progressi, in palestra e su strada.</h2>
     <p>Loadmap è il diario di allenamento essenziale: crea le tue schede, registra ogni serie in palestra e ogni corsa, e guarda i tuoi progressi prendere forma nei grafici. Senza account, senza pubblicità, in sync automatico tra iPhone e iPad.</p>
-    <a href="#" class="wm-appstore-btn">Scarica su App Store</a>
+    <a href="https://apps.apple.com/it/app/loadmap-gym-run-tracker/id6792369238" class="wm-appstore-badge">
+      <img src="/images/badges/app-store-badge-it.svg" alt="Scarica su App Store" loading="lazy">
+    </a>
   </div>
 </div>
 {{< /rawhtml >}}
@@ -86,6 +88,8 @@ Niente funzioni superflue: solo quello che serve per allenarti e vedere i tuoi p
 
 {{< rawhtml >}}
 <div class="wm-cta">
-  <a href="#" class="wm-appstore-btn">Scarica su App Store</a>
+  <a href="https://apps.apple.com/it/app/loadmap-gym-run-tracker/id6792369238" class="wm-appstore-badge">
+    <img src="/images/badges/app-store-badge-it.svg" alt="Scarica su App Store" loading="lazy">
+  </a>
 </div>
 {{< /rawhtml >}}

@@ -50,7 +50,19 @@
       "Read(//Users/claudio/Projects/**)",
       "Bash(echo \"gitlink: $\\(git ls-tree HEAD themes/PaperMod\\)\")",
       "Bash(echo \"checkout: $\\(git -C themes/PaperMod rev-parse HEAD\\)\")",
-      "Bash(HUGO_ENVIRONMENT=production hugo --gc --minify -d /private/tmp/claude-501/-Users-claudio-Projects-bostick23-github-io/0bb671ee-ed39-4f96-9e41-88417a7f85e1/scratchpad/public-test)"
+      "Bash(HUGO_ENVIRONMENT=production hugo --gc --minify -d /private/tmp/claude-501/-Users-claudio-Projects-bostick23-github-io/0bb671ee-ed39-4f96-9e41-88417a7f85e1/scratchpad/public-test)",
+      "Bash(hugo --minify -e production)",
+      "Bash(curl -sL \"https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg\" -o download-on-the-app-store.svg)",
+      "Bash(curl -s \"https://toolbox.marketingtools.apple.com/app-store/\")",
+      "Bash(curl -sL \"https://toolbox.marketingtools.apple.com/app-store/\" -o /tmp/toolbox.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -sI \"https://toolbox.marketingtools.apple.com/api/assets/featured-content/apps/badges/badge-1/it-it.svg\")",
+      "Bash(curl -sI \"https://toolbox.marketingtools.apple.com/api/assets/featured-content/apps/badges/badge-1/en-us.svg\")",
+      "Bash(curl -sL \"https://toolbox.marketingtools.apple.com/it-it/app-store/it\" -o /tmp/toolbox_it.html)",
+      "Bash(curl --version)",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://developer.apple.com/assets/elements/badges/download-on-the-app-store-it.svg\")",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://developer.apple.com/it/assets/elements/badges/download-on-the-app-store.svg\")",
+      "Bash(/usr/bin/curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://developer.apple.com/assets/elements/badges/it/download-on-the-app-store.svg\")"
     ]
   }
 }

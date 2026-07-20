@@ -102,6 +102,24 @@
     box-shadow: none;
 }
 
+/* Official App Store badge */
+.wm-appstore-badge {
+    display: inline-block;
+    line-height: 0;
+    box-shadow: none;
+    transition: opacity 0.2s ease;
+}
+
+.wm-appstore-badge:hover {
+    opacity: 0.85;
+    box-shadow: none;
+}
+
+.wm-appstore-badge img {
+    height: 45px;
+    width: auto;
+}
+
 /* Features grid */
 .wm-features {
     display: grid;

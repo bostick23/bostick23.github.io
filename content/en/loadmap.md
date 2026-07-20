@@ -11,7 +11,9 @@ ShowBreadCrumbs: false
   <div class="wm-hero-text">
     <h2>The map of your progress, at the gym and on the road.</h2>
     <p>Loadmap is a no-frills training log: build your workout plans, record every set and every run, and watch your progress take shape in charts. No account, no ads, automatic sync between iPhone and iPad.</p>
-    <a href="#" class="wm-appstore-btn">Download on App Store</a>
+    <a href="https://apps.apple.com/it/app/loadmap-gym-run-tracker/id6792369238" class="wm-appstore-badge">
+      <img src="/images/badges/app-store-badge-en.svg" alt="Download on the App Store" loading="lazy">
+    </a>
   </div>
 </div>
 {{< /rawhtml >}}
@@ -86,6 +88,8 @@ No superfluous features: just what you need to train and see your progress. Whet
 
 {{< rawhtml >}}
 <div class="wm-cta">
-  <a href="#" class="wm-appstore-btn">Download on App Store</a>
+  <a href="https://apps.apple.com/it/app/loadmap-gym-run-tracker/id6792369238" class="wm-appstore-badge">
+    <img src="/images/badges/app-store-badge-en.svg" alt="Download on the App Store" loading="lazy">
+  </a>
 </div>
 {{< /rawhtml >}}
