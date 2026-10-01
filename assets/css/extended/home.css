@@ -215,3 +215,15 @@
     .pli-date { width: auto; }
     .section-head { flex-direction: column; gap: 0.3rem; }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .ds-btn, .pli-link, .project-card {
+        transition: none;
+    }
+    .pli-link:hover {
+        padding-inline: 0.4rem;
+    }
+    .ds-btn:hover, .project-card:hover {
+        transform: none;
+    }
+}

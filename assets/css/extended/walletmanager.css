@@ -213,3 +213,12 @@
         font-size: 0.85rem;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .wm-promo-arrow, .wm-appstore-btn {
+        transition: none;
+    }
+    .wm-promo-link:hover .wm-promo-arrow {
+        transform: none;
+    }
+}

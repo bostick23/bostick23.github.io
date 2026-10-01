@@ -1,4 +1,5 @@
 ---
+translationKey: about
 title: "Chi sono"
 description: "Sviluppatore .NET con attenzione al design funzionale. Come penso al codice e quali problemi mi interessano."
 hideMeta: true

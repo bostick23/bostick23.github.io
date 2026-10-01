@@ -1,4 +1,5 @@
 ---
+translationKey: about
 title: "About"
 description: ".NET developer with an eye for functional design. How I think about code and which problems interest me."
 hideMeta: true

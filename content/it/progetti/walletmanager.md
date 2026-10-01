@@ -1,4 +1,5 @@
 ---
+translationKey: project-walletmanager
 title: "WalletManager"
 description: "App iOS per gestire le finanze personali con semplicità e privacy totale, senza account né cloud."
 weight: 10

@@ -1,14 +1,4 @@
-{{- /*
-  OVERRIDE del partial header del tema PaperMod.
-  È una copia FEDELE di themes/PaperMod/layouts/_partials/header.html con UNA
-  sola modifica: `.Language.LanguageName` → `.Language.Label` nello switch lingua
-  (LanguageName è deprecato da Hugo v0.158.0 e genera un WARN in build).
-
-  Quando il tema PaperMod migrerà a `.Language.Label` upstream, ELIMINA questo
-  file e torna al partial del tema (così eviti il drift con le versioni future).
-  Se aggiorni il submodule prima di allora, ri-sincronizza questo file con il
-  nuovo header del tema.
-*/ -}}
+{{- /* PaperMod 154d006 override: Language.Label; keep aligned with upstream. */ -}}
 <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -71,7 +61,7 @@
                 
                 {{- if (not site.Params.disableLangToggle) }}
                     {{- $lang := .Lang}}
-                    {{- with site.Home.Translations }}
+                    {{- with (.Translations | default site.Home.Translations) }}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                     {{- if $separator }}<span class="nav-sep">|</span>{{ end }}
                     <ul class="lang-menu">

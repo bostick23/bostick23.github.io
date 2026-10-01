@@ -1,4 +1,5 @@
 ---
+translationKey: contact
 title: "Contact"
 description: "Send me a message"
 hideMeta: true
@@ -49,7 +50,7 @@ Have a question, suggestion, or just want to get in touch? Fill out the form bel
     <span class="btn-loading" style="display:none;">Sending...</span>
   </button>
 
-  <div id="contact-result" class="contact-result"></div>
+  <div id="contact-result" class="contact-result" role="status" aria-live="polite" aria-atomic="true"></div>
 </form>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -68,7 +69,8 @@ form.addEventListener('submit', function(e) {
   btnText.style.display = 'none';
   btnLoading.style.display = 'inline';
   btn.disabled = true;
-  result.innerHTML = '';
+  form.setAttribute('aria-busy', 'true');
+  result.textContent = '';
   result.className = 'contact-result';
 
   const formData = new FormData(form);
@@ -79,23 +81,24 @@ form.addEventListener('submit', function(e) {
   })
   .then(async (response) => {
     const json = await response.json();
-    if (response.status === 200) {
-      result.innerHTML = 'Message sent successfully! I\'ll get back to you as soon as possible.';
+    if (response.ok && json.success === true) {
+      result.textContent = 'Message sent successfully! I\'ll get back to you as soon as possible.';
       result.className = 'contact-result success';
       form.reset();
     } else {
-      result.innerHTML = 'An error occurred. Please try again later.';
+      result.textContent = 'An error occurred. Please try again later.';
       result.className = 'contact-result error';
     }
   })
   .catch(() => {
-    result.innerHTML = 'A connection error occurred. Please try again later.';
+    result.textContent = 'A connection error occurred. Please try again later.';
     result.className = 'contact-result error';
   })
   .finally(() => {
     btnText.style.display = 'inline';
     btnLoading.style.display = 'none';
     btn.disabled = false;
+    form.removeAttribute('aria-busy');
   });
 });
 </script>

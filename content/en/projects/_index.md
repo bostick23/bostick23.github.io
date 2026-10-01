@@ -1,4 +1,5 @@
 ---
+translationKey: projects
 title: "Projects"
 description: "Things I have built, not just written about: apps, frameworks and tools I have worked on."
 type: projects

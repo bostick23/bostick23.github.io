@@ -37,6 +37,12 @@
     border-color: var(--primary);
 }
 
+.contact-field input:focus-visible,
+.contact-field textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
 .contact-field input::placeholder,
 .contact-field textarea::placeholder {
     color: var(--secondary);
@@ -121,5 +127,11 @@
     .contact-submit-btn {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-field input, .contact-field textarea, .contact-submit-btn {
+        transition: none;
     }
 }

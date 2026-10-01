@@ -1,4 +1,5 @@
 ---
+translationKey: project-logicway-rfid
 title: "RFID for LogicWay"
 description: "Integrating RFID technology into the LogicWay management software."
 weight: 30

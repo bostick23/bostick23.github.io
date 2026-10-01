@@ -178,7 +178,7 @@ code, pre, kbd, .post-tags a, .terms-tags a {
 }
 
 /* Voce di menu attiva */
-.nav .logo a,
+.header-nav .logo a,
 #menu a span.active {
     box-shadow: 0 1px 0 0 var(--accent);
 }
@@ -191,4 +191,14 @@ code, pre, kbd, .post-tags a, .terms-tags a {
 .top-link {
     color: var(--accent-contrast);
     background: var(--accent);
+}
+
+/* Visible keyboard focus in both color themes. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }

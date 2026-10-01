@@ -58,19 +58,19 @@ ShowBreadCrumbs: false
 {{< rawhtml >}}
 <div class="wm-screenshots">
   <div class="wm-screenshot">
-    <img src="/images/walletmanager/screenshot-movimenti.jpg" alt="WalletManager - Lista Movimenti" loading="lazy">
+    <img src="/images/walletmanager/screenshot-movimenti.jpg" width="1242" height="2688" alt="WalletManager - Lista Movimenti" loading="lazy">
     <p>Lista Movimenti</p>
   </div>
   <div class="wm-screenshot">
-    <img src="/images/walletmanager/screenshot-ricorrenti.jpg" alt="WalletManager - Pagamenti Ricorrenti" loading="lazy">
+    <img src="/images/walletmanager/screenshot-ricorrenti.jpg" width="1242" height="2688" alt="WalletManager - Pagamenti Ricorrenti" loading="lazy">
     <p>Pagamenti Ricorrenti</p>
   </div>
   <div class="wm-screenshot">
-    <img src="/images/walletmanager/screenshot-statistiche.jpg" alt="WalletManager - Statistiche" loading="lazy">
+    <img src="/images/walletmanager/screenshot-statistiche.jpg" width="1242" height="2688" alt="WalletManager - Statistiche" loading="lazy">
     <p>Statistiche</p>
   </div>
   <div class="wm-screenshot">
-    <img src="/images/walletmanager/screenshot-categorie.jpg" alt="WalletManager - Categorie" loading="lazy">
+    <img src="/images/walletmanager/screenshot-categorie.jpg" width="1242" height="2688" alt="WalletManager - Categorie" loading="lazy">
     <p>Gestione Categorie</p>
   </div>
 </div>

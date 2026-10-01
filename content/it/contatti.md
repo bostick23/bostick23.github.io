@@ -1,4 +1,5 @@
 ---
+translationKey: contact
 title: "Contatti"
 description: "Scrivimi un messaggio"
 hideMeta: true
@@ -49,7 +50,7 @@ Hai una domanda, un suggerimento o vuoi semplicemente metterti in contatto? Comp
     <span class="btn-loading" style="display:none;">Invio in corso...</span>
   </button>
 
-  <div id="contact-result" class="contact-result"></div>
+  <div id="contact-result" class="contact-result" role="status" aria-live="polite" aria-atomic="true"></div>
 </form>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -68,7 +69,8 @@ form.addEventListener('submit', function(e) {
   btnText.style.display = 'none';
   btnLoading.style.display = 'inline';
   btn.disabled = true;
-  result.innerHTML = '';
+  form.setAttribute('aria-busy', 'true');
+  result.textContent = '';
   result.className = 'contact-result';
 
   const formData = new FormData(form);
@@ -79,23 +81,24 @@ form.addEventListener('submit', function(e) {
   })
   .then(async (response) => {
     const json = await response.json();
-    if (response.status === 200) {
-      result.innerHTML = 'Messaggio inviato con successo! Ti risponderò il prima possibile.';
+    if (response.ok && json.success === true) {
+      result.textContent = 'Messaggio inviato con successo! Ti risponderò il prima possibile.';
       result.className = 'contact-result success';
       form.reset();
     } else {
-      result.innerHTML = 'Si è verificato un errore. Riprova più tardi.';
+      result.textContent = 'Si è verificato un errore. Riprova più tardi.';
       result.className = 'contact-result error';
     }
   })
   .catch(() => {
-    result.innerHTML = 'Si è verificato un errore di connessione. Riprova più tardi.';
+    result.textContent = 'Si è verificato un errore di connessione. Riprova più tardi.';
     result.className = 'contact-result error';
   })
   .finally(() => {
     btnText.style.display = 'inline';
     btnLoading.style.display = 'none';
     btn.disabled = false;
+    form.removeAttribute('aria-busy');
   });
 });
 </script>

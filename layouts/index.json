@@ -1,0 +1,8 @@
+{{- /* PaperMod 154d006 override: exclude non-rendered pages with no URL. */ -}}
+{{- $index := slice -}}
+{{- range site.RegularPages -}}
+    {{- if and .Permalink (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) -}}
+        {{- $index = $index | append (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+    {{- end -}}
+{{- end -}}
+{{- $index | jsonify -}}

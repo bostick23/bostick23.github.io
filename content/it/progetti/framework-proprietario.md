@@ -1,4 +1,5 @@
 ---
+translationKey: project-framework-proprietario
 title: "Framework proprietario .NET"
 description: "Framework interno per portare i prodotti aziendali (LogicWay, MesWay, eWeb) da ASP.NET WebForms ad ASP.NET Core."
 weight: 20

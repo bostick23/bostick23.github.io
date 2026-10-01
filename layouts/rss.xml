@@ -1,4 +1,4 @@
-{{- /* Fixed: removed deprecated site.Author (0.156+) and site.Language.LanguageCode (0.158+) */}}
+{{- /* PaperMod 154d006 override: current language API and safe empty feeds. */ -}}
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
   {{- if reflect.IsMap . }}
@@ -27,6 +27,8 @@
 {{- else }}
 {{- $pages = $pctx.Pages }}
 {{- end }}
+{{- $pages = where $pages "Params.hiddenInRss" "!=" true -}}
+{{- $pages = where $pages "Permalink" "!=" "" -}}
 {{- $limit := site.Config.Services.RSS.Limit }}
 {{- if ge $limit 1 }}
 {{- $pages = $pages | first $limit }}
@@ -44,11 +46,11 @@
       <link>{{ index . 0 | absURL }}</link>
     </image>
     {{- end }}
-    <generator>Hugo -- {{ hugo.Version }}</generator>
+    <generator>Hugo</generator>
     <language>{{ site.Language.Locale }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with site.Copyright }}
-    <copyright>{{ . | markdownify | plainify | strings.TrimPrefix "© " }}</copyright>{{ end }}{{ if not .Date.IsZero }}
+    <copyright>{{ . | markdownify | plainify | strings.TrimPrefix "© " }}</copyright>{{ end }}{{ if and $pages (not .Date.IsZero) }}
     <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}

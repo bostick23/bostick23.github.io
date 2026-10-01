@@ -4,7 +4,7 @@
   <section class="hero projects-hero">
     <h1 class="hero-title">{{ .Title }}</h1>
     {{- with .Description }}<div class="hero-text"><p>{{ . }}</p></div>{{- end }}
-    {{- if .Content }}<div class="hero-text post-content">{{ .Content }}</div>{{- end }}
+    {{- if .Content }}<div class="hero-text post-content md-content">{{ .Content }}</div>{{- end }}
   </section>
 
   {{- with .Pages }}
