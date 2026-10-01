@@ -19,16 +19,47 @@ python scripts/check_site.py public
 ```
 
 Il controllo richiede Python 3 senza pacchetti aggiuntivi. Verifica XML, feed RSS,
-indici di ricerca, metadati multilingue e l'esclusione delle bozze note. Per
+indici di ricerca, metadati SEO e multilingue, regole di indicizzazione,
+sitemap, robots.txt e l'esclusione delle bozze note. Per
 confrontare URL e sintesi RSS con una build precedente:
 
 ```sh
 python scripts/check_site.py public --compare /percorso/build-precedente
 ```
 
+Il confronto verifica anche canonical e hreflang. Quando si modificano
+intenzionalmente le descrizioni editoriali, aggiungere `--allow-summary-changes`:
+le descrizioni sono usate anche nei feed RSS. Per verificare una build creata con
+`hugo --environment development`, usare `--environment development` anche nello
+script di controllo.
+
+## Metadati e indicizzazione
+
+`languages.<lingua>.params.seoTitle` imposta il titolo HTML completo della
+homepage; `params.seoTitle` nel front matter consente un titolo HTML specifico
+per una pagina. Il nome del sito e le intestazioni visibili restano indipendenti.
+Le homepage usano la descrizione per lingua; articoli e sezioni hanno una
+`description` esplicita nel front matter.
+
+Per escludere una pagina dai motori di ricerca mantenendola accessibile:
+
+```yaml
+robotsNoIndex: true
+sitemap:
+  disable: true
+```
+
+In produzione queste pagine emettono `noindex, follow`; le altre emettono
+`index, follow`. In sviluppo tutte le pagine emettono `noindex, nofollow`.
+Privacy, ricerca e archivi tag/categorie vuoti sono esclusi dall'indicizzazione
+e dalle sitemap. Quando gli archivi avranno contenuti utili, rimuovere entrambi
+i parametri dai rispettivi `_index.md` in entrambe le lingue.
+`enableRobotsTXT` abilita il template PaperMod, con scansione consentita in
+produzione e riferimento all'indice delle sitemap multilingue.
+
 ## Tema e manutenzione
 
-Gli override `layouts/baseof.html`, `layouts/rss.xml` e i partial header,
+Gli override `layouts/baseof.html`, `layouts/rss.xml` e i partial head, header,
 translation_list e Open Graph seguono PaperMod al commit indicato. Usano le API
 Hugo `Language.Direction`, `Language.Label` e `Language.Locale`. Il cambio lingua
 nell'header apre la traduzione della pagina corrente, quando esiste, altrimenti

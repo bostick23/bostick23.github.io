@@ -1,10 +1,12 @@
 ---
+robotsNoIndex: true
+sitemap:
+  disable: true
 title: "Privacy Policy — Loadmap"
 description: "Privacy policy for the Loadmap app"
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false
-robots: "noindex"
 ---
 
 **Last updated:** July 18, 2026

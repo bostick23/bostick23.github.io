@@ -1,7 +1,8 @@
 ---
+title: "JavaScript: filter, map e reduce con esempi"
+description: "Esempi di filter, map e reduce in JavaScript: selezionare numeri pari, calcolare quadrati e sommare i valori di un array."
 date: "2024-11-01T12:03:32+01:00"
 draft: false
-title: "Javascript Filter Map Reduce"
 ---
 
 Queste tre funzioni servono per gestire rapidamente dati all'interno di liste. Sono l'equivalente in Javascript del LINQ

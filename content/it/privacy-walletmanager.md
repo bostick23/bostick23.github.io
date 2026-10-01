@@ -1,10 +1,12 @@
 ---
+robotsNoIndex: true
+sitemap:
+  disable: true
 title: "Privacy Policy — WalletManager"
 description: "Informativa sulla privacy dell'app WalletManager"
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false
-robots: "noindex"
 ---
 
 **Ultimo aggiornamento:** 6 marzo 2026

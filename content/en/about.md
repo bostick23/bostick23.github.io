@@ -1,7 +1,7 @@
 ---
-translationKey: about
 title: "About"
-description: ".NET developer with an eye for functional design. How I think about code and which problems interest me."
+description: "Claudio Bosticco, Software Development Manager at Sistemi Tre: team leadership, .NET architectures and the design of WMS and MES software products."
+translationKey: about
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false

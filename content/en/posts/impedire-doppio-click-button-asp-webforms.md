@@ -1,7 +1,8 @@
 ---
+title: "ASP.NET WebForms: prevent double clicks on a button"
+description: "An example using UseSubmitBehavior and JavaScript to handle repeated clicks on an ASP.NET WebForms button during an operation."
 date: "2024-11-01T11:59:00+01:00"
 draft: false
-title: "Prevent Double Click Button ASP WebForms"
 ---
 
 To prevent inadvertent double-clicking of a Button in an ASP.NET WebForms project, you need to set the `UseSubmitBehavior="false"` tag:

@@ -1,7 +1,8 @@
 ---
+title: "Entity Framework Core: create migrations and roll back the database"
+description: "Use dotnet ef to create a migration with a specific project and DbContext, and roll the database back to a previous migration."
 date: "2024-11-01T12:05:12+01:00"
 draft: false
-title: "EF Migrations"
 ---
 
 This section illustrates useful commands for managing migrations.

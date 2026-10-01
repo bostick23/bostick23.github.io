@@ -1,7 +1,8 @@
 ---
+title: "Linux: trovare file grandi ed eliminare file per estensione"
+description: "Esempi del comando find su Linux per individuare file di almeno 1 GB e cercare ed eliminare file con una determinata estensione."
 date: "2024-11-01T12:06:08+01:00"
 draft: false
-title: "Linux Manutenzione Dello Spazio Su Disco"
 ---
 
 In questa sezione vengono illustrati i comandi per ottimizzare lo spazio su server Linux.

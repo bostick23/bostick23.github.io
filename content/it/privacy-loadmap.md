@@ -1,10 +1,12 @@
 ---
+robotsNoIndex: true
+sitemap:
+  disable: true
 title: "Privacy Policy — Loadmap"
 description: "Informativa sulla privacy dell'app Loadmap"
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false
-robots: "noindex"
 ---
 
 **Ultimo aggiornamento:** 18 luglio 2026

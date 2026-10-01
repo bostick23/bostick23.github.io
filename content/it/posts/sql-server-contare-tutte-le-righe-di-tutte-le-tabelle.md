@@ -1,7 +1,8 @@
 ---
+title: "SQL Server: contare le righe di tutte le tabelle"
+description: "Una query SQL Server con COUNT(*) e una tabella temporanea per elencare le tabelle del database ordinate per numero di righe."
 date: "2024-11-01T12:08:10+01:00"
 draft: false
-title: "Sql Server Contare Tutte Le Righe Di Tutte Le Tabelle"
 ---
 
 Questa query serve per contare tutte le righe di tutte le tabelle di un database

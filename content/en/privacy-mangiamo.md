@@ -1,10 +1,12 @@
 ---
+robotsNoIndex: true
+sitemap:
+  disable: true
 title: "Privacy Policy — Mangiamo"
 description: "Privacy policy for the Mangiamo app"
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false
-robots: "noindex"
 ---
 
 **Last updated:** July 19, 2026

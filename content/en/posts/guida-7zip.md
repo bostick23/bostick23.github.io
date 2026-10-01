@@ -1,7 +1,8 @@
 ---
+title: "7-Zip command line: create archives and extract files"
+description: "Use 7z.exe from the command line: add 7-Zip to PATH, create a .7z archive and extract files from a ZIP archive."
 date: "2024-11-01T12:03:03+01:00"
 draft: false
-title: "7zip Guide"
 ---
 
 7-Zip can be used via console. To simplify its use, simply add the path to the executable to the system PATH.

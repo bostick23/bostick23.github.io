@@ -1,7 +1,7 @@
 ---
-translationKey: projects
 title: "Progetti"
-description: "Cose che ho costruito, non solo di cui ho scritto: app, framework e strumenti su cui ho lavorato."
+description: "Progetti di Claudio Bosticco: framework .NET per software gestionali e app personali come WalletManager, Loadmap e Mangiamo."
+translationKey: projects
 type: projects
 hideMeta: true
 ShowBreadCrumbs: false

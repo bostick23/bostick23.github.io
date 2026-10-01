@@ -1,7 +1,7 @@
 ---
-translationKey: projects
 title: "Projects"
-description: "Things I have built, not just written about: apps, frameworks and tools I have worked on."
+description: "Projects by Claudio Bosticco, including a .NET framework for enterprise software and the WalletManager personal finance app."
+translationKey: projects
 type: projects
 hideMeta: true
 ShowBreadCrumbs: false

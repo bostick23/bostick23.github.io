@@ -1,7 +1,8 @@
 ---
+title: "Entity Framework Core: creare migration e ripristinare il database"
+description: "Comandi dotnet ef per creare una migration indicando progetto e DbContext e riportare il database a una migration precedente."
 date: "2024-11-01T12:05:12+01:00"
 draft: false
-title: "Ef Migrations"
 ---
 
 In questa sezione sono illustrati comandi utili per gestire le migrations.

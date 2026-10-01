@@ -1,7 +1,8 @@
 ---
+title: "SQL Server: count rows in every table"
+description: "A SQL Server query using COUNT(*) and a temporary table to list database tables ordered by their row counts."
 date: "2024-11-01T12:08:10+01:00"
 draft: false
-title: "SQL Server Count All Rows in All Tables"
 ---
 
 This query is used to count all rows in all tables of a database.

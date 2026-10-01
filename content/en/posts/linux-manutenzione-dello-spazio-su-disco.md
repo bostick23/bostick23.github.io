@@ -1,7 +1,8 @@
 ---
+title: "Linux: find large files and delete files by extension"
+description: "Examples of the Linux find command to locate files of at least 1 GB and find and delete files with a specific extension."
 date: "2024-11-01T12:06:08+01:00"
 draft: false
-title: "Linux Disk Space Maintenance"
 ---
 
 This section illustrates commands for optimizing space on Linux servers.

@@ -1,7 +1,7 @@
 ---
-translationKey: about
 title: "Chi sono"
-description: "Sviluppatore .NET con attenzione al design funzionale. Come penso al codice e quali problemi mi interessano."
+description: "Claudio Bosticco, responsabile sviluppo software in Sistemi Tre: guida del team, architetture .NET e ideazione di prodotti gestionali WMS e MES."
+translationKey: about
 hideMeta: true
 disableShare: true
 ShowBreadCrumbs: false
