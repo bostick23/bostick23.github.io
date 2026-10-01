@@ -3,6 +3,10 @@ defaultContentLanguage: it
 title: Claudio Bosticco
 theme: ["PaperMod"]
 enableRobotsTXT: true
+enableGitInfo: true
+
+frontmatter:
+  lastmod: ["lastmod", ":git", "date", "publishDate"]
 
 languages:
   it:

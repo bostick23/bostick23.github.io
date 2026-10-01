@@ -102,6 +102,9 @@ def check(root, previous=None, allow_summary_changes=False, environment="product
     for lang in ["it", "en"]:
         sitemap = ET.parse(root / lang / "sitemap.xml").getroot()
         indexed_urls.update(node.text for node in sitemap.findall("s:url/s:loc", ns))
+        for url in sitemap.findall("s:url", ns):
+            require((url.findtext("s:lastmod", namespaces=ns) or "").strip(),
+                    f"Missing sitemap lastmod: {url.findtext('s:loc', namespaces=ns)}")
     for relative, page in metadata.items():
         if not page.canonical or page.is_redirect or relative.endswith("404.html"):
             continue
